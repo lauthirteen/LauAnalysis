@@ -1,0 +1,15 @@
+# Required Information
+calculation 2PBD
+traj_type LAMMPS
+traj_path ./test.lammpstrj
+num_atom_type 3
+total_num_atom 621
+atom_type1 H
+atom_type2 O
+atom_type3 Mg
+frame_dt 0.001  # the time of between two frame
+begin_frame 1   # begin from 1
+end_frame 10
+interval_frame 1 # must >= 1
+# Optional Information
+
