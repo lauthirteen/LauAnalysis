@@ -17,15 +17,15 @@ bool CellFile::ReadGeometry_LAMMPS( Cell &cel, ifstream &ifs )
     READ_VALUE(ifs, useless);
    
     // (2) read in cell x y z
-    ifs >> xlo >> xhi;
+    ifs >> xlo;
+    READ_VALUE(ifs, xhi);
     cel.cell_x = xhi - xlo;
-    READ_VALUE(ifs, useless);
-    ifs >> ylo >> yhi;
+    ifs >> ylo;
+    READ_VALUE(ifs, yhi);
     cel.cell_y = yhi - ylo;
-    READ_VALUE(ifs, useless);
-    ifs >> zlo >> zhi;
+    ifs >> zlo;
+    READ_VALUE(ifs, zhi);
     cel.cell_z = zhi - zlo;
-    READ_VALUE(ifs, useless);
 
     // (3) read id and coord
     delete[] cel.atom;

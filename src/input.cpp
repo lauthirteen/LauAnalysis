@@ -66,6 +66,13 @@ void Input::Default(void)
     end_frame = 0;
     interval_frame = 1;
 
+    direction = "x"; // number density: x or y  or z
+    rcut = 200.0; // A
+    dr = 0.01; // A
+    atom_name1 = "X"; // target operating atom
+    atom_name2 = "X"; // target operating atom
+
+
     return;
 }
 
@@ -116,6 +123,12 @@ void Input::Read(const string &fn) // read parameters
         else if (strcmp("begin_frame", word) == 0) read_value(ifs,begin_frame);
         else if (strcmp("end_frame", word) == 0) read_value(ifs, end_frame);
         else if (strcmp("interval_frame", word) == 0) read_value(ifs, interval_frame);
+        //
+        else if (strcmp("direction", word) == 0) read_value(ifs, direction);
+        else if (strcmp("rcut", word) == 0) read_value(ifs, rcut);
+        else if (strcmp("dr", word) == 0) read_value(ifs, dr);
+        else if (strcmp("atom_name1", word) == 0) read_value(ifs, atom_name1);
+        else if (strcmp("atom_name2", word) == 0) read_value(ifs, atom_name2);
         //
         else if (strcmp("#", word) == 0)
         {

@@ -1,0 +1,15 @@
+make --dry-run --always-make --keep-going --print-directory
+make: Entering directory '/home/lau/ljc/Learn_C++/LauT'
+mkdir obj
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/input.cpp -o obj/input.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/atom.cpp -o obj/atom.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/cell.cpp -o obj/cell.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/global_functions.cpp -o obj/global_functions.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/LAMMPS.cpp -o obj/LAMMPS.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/cellFile.cpp -o obj/cellFile.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/conver2PDB.cpp -o obj/conver2PDB.o
+mpiicc -O3  -g -Wall -Iinclude -c  -D__MPI  src/main.cpp -o obj/main.o
+mkdir bin
+mpiicc obj/input.o obj/atom.o obj/cell.o obj/global_functions.o obj/LAMMPS.o obj/cellFile.o obj/conver2PDB.o obj/main.o  -o bin/LauAnalysis
+make: Leaving directory '/home/lau/ljc/Learn_C++/LauT'
+ 

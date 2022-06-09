@@ -1,6 +1,8 @@
 TARGET = LauAnalysis
 CC     = mpiicc
 CFLAGS = -O3  -g -Wall -I${DIR_INC}
+HONG   = -D__MPI
+
 
 DIR_INC = include
 DIR_SRC = src
@@ -15,7 +17,7 @@ BIN_TARGET = ${DIR_BIN}/${TARGET}
 ${BIN_TARGET}:${OBJ} ${DIR_BIN}
 	$(CC) $(OBJ)  -o $@
 ${DIR_OBJ}/%.o:${DIR_SRC}/%.cpp ${DIR_OBJ}
-	$(CC) $(CFLAGS) -c  $< -o $@
+	$(CC) $(CFLAGS) -c  ${HONG}  $< -o $@
 
 ${DIR_BIN}:
 	@-mkdir ${DIR_BIN}

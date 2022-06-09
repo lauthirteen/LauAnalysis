@@ -59,6 +59,12 @@ public:
     int end_frame;
     int interval_frame;
 
+    string direction; // x y z , number density direction
+    double rcut; // max box length
+    double dr;    // bin of length
+    string atom_name1; // target operating atom
+    string atom_name2; // target operating atom
+
 
 	template <class T>
     static void read_value(ifstream &ifs, T &var)

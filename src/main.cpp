@@ -4,6 +4,7 @@
 #include "../include/cell.h"
 #include "../include/cellFile.h"
 #include "../include/conver2PDB.h"
+#include "../include/number_density.h"
 
 // example：./LauAnalysis INPUT
 
@@ -39,6 +40,10 @@ int main(int argc, char **argv)
     if(INPUT.calculation == "2PBD")
     {
         conver2PDB ts; ts.Routine();
+    }
+    else if(INPUT.calculation == "NUMBER_DENSITY")
+    {
+        NumberDensity ts; ts.Routine();
     }
     else
     {
