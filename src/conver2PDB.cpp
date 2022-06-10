@@ -141,6 +141,7 @@ void conver2PDB::Routine()
             }
         }
         //
+        ofs << "END" << endl;
         //cout << INPUT.end_frame << "  " << igeo << endl;
         //cout << "atom num: " << cel.atom_num << endl;
         //cout << cel.atom[542].x << " " << cel.atom[542].name << " " << cel.atom[542].mass <<  endl; 

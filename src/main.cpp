@@ -5,6 +5,8 @@
 #include "../include/cellFile.h"
 #include "../include/conver2PDB.h"
 #include "../include/number_density.h"
+#include "../include/water.h"
+
 
 // example：./LauAnalysis INPUT
 

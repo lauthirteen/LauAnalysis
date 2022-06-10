@@ -9,7 +9,9 @@ atom_type2 O
 atom_type3 Mg
 frame_dt 0.001  # the time of between two frame
 begin_frame 1   # begin from 1
-end_frame 10
+end_frame 1000
 interval_frame 1 # must >= 1
 # Optional Information
-
+cell_dim_x 17.5
+cell_dim_y 17.5
+cell_dim_z 17.5

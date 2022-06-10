@@ -27,7 +27,7 @@ void Input::Init(const string &fn, const int &argc)
 	ofs_running << " ------------------------------------------------------------------------------------" << endl;
 	ofs_running << "              WELCOME TO LauAnalysis " << ctime(&time_start) << endl;
 	ofs_running << " THIS IS A PROGRAM FOR PERFORMING ANALYSIS FOR MOLECULAR DYNAMICS" << endl;
-	ofs_running << " AUTHOR: Lau, LAST UPDATE: 2022-03" << endl;
+	ofs_running << " AUTHOR: Lau, LAST UPDATE: 2022-06" << endl;
 
 	ofs_running << setiosflags(ios::right); // 右对齐输出
 	ofs_running << setiosflags(ios::left);
@@ -72,6 +72,11 @@ void Input::Default(void)
     atom_name1 = "X"; // target operating atom
     atom_name2 = "X"; // target operating atom
 
+    cell_dim_x = 0; // cell length A
+    cell_dim_y = 0;
+    cell_dim_z = 0;
+
+    nHB_max = 8; // max HB number
 
     return;
 }
@@ -129,6 +134,10 @@ void Input::Read(const string &fn) // read parameters
         else if (strcmp("dr", word) == 0) read_value(ifs, dr);
         else if (strcmp("atom_name1", word) == 0) read_value(ifs, atom_name1);
         else if (strcmp("atom_name2", word) == 0) read_value(ifs, atom_name2);
+        //
+        else if (strcmp("cell_dim_x", word) == 0) read_value(ifs, cell_dim_x);
+        else if (strcmp("cell_dim_y", word) == 0) read_value(ifs, cell_dim_y);
+        else if (strcmp("cell_dim_z", word) == 0) read_value(ifs, cell_dim_z);
         //
         else if (strcmp("#", word) == 0)
         {

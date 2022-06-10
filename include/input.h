@@ -64,8 +64,11 @@ public:
     double dr;    // bin of length
     string atom_name1; // target operating atom
     string atom_name2; // target operating atom
+    double cell_dim_x; // box length
+    double cell_dim_y; // box length
+    double cell_dim_z; // box length
 
-
+    int nHB_max; // MAX HB number
 	template <class T>
     static void read_value(ifstream &ifs, T &var)
     {

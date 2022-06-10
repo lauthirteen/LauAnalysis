@@ -1,4 +1,6 @@
 make all --print-data-base --no-builtin-variables --no-builtin-rules --question
+make: *** No rule to make target 'all'.  Stop.
+
 # GNU Make 4.2.1
 # Built for x86_64-pc-linux-gnu
 # Copyright (C) 1988-2016 Free Software Foundation, Inc.
@@ -6,7 +8,7 @@ make all --print-data-base --no-builtin-variables --no-builtin-rules --question
 # This is free software: you are free to change and redistribute it.
 # There is NO WARRANTY, to the extent permitted by law.
 
-# Make data base, printed on Thu Jun  9 11:03:24 2022
+# Make data base, printed on Fri Jun 10 09:45:09 2022
 
 # Variables
 
@@ -107,7 +109,7 @@ VSCODE_CWD = /home/lau
 # environment
 OCL_ICD_FILENAMES = libintelocl_emu.so:libalteracl.so:/home/lau/soft_install/intel/oneapi/compiler/2021.3.0/linux/lib/x64/libintelocl.so
 # environment
-SSH_CONNECTION = 222.29.24.18 2380 162.105.227.158 22
+SSH_CONNECTION = 222.29.104.22 3329 162.105.227.158 22
 # environment
 PATH = /home/lau/.vscode-server/bin/c3511e6c69bb39013c4a4b7b9566ec1ca73fc4d5/bin/remote-cli:/home/lau/ljc/Learn_C++/LauT/bin:/home/lau/soft_install/atat/bin:/home/lau/ljc/Learn_C++/Modified_D310:/home/lau/soft_install/gmx-2021.1/bin:/home/lau/soft_install/VESTA-gtk3:/home/lau/soft_install/ovito-basic-3.7.4-x86_64/bin:/home/lau/soft_install/Multiwfn_3.8_dev_bin_Linux:/home/lau/soft_install/xtb/bin:/home/lau/soft_install/packmol:/home/lau/soft_install/intel/oneapi/vtune/2021.5.0/bin64:/home/lau/soft_install/intel/oneapi/vpl/2021.4.0/bin:/home/lau/soft_install/intel/oneapi/mpi/2021.3.0//libfabric/bin:/home/lau/soft_install/intel/oneapi/mpi/2021.3.0//bin:/home/lau/soft_install/intel/oneapi/mkl/2021.3.0/bin/intel64:/home/lau/soft_install/intel/oneapi/itac/2021.3.0/bin:/home/lau/soft_install/intel/oneapi/intelpython/latest/bin:/home/lau/soft_install/intel/oneapi/inspector/2021.3.0/bin64:/home/lau/soft_install/intel/oneapi/dpcpp-ct/2021.3.0/bin:/home/lau/soft_install/intel/oneapi/dev-utilities/2021.3.0/bin:/home/lau/soft_install/intel/oneapi/debugger/10.1.2/gdb/intel64/bin:/home/lau/soft_install/intel/oneapi/compiler/2021.3.0/linux/lib/oclfpga/llvm/aocl-bin:/home/lau/soft_install/intel/oneapi/compiler/2021.3.0/linux/lib/oclfpga/bin:/home/lau/soft_install/intel/oneapi/compiler/2021.3.0/linux/bin/intel64:/home/lau/soft_install/intel/oneapi/compiler/2021.3.0/linux/bin:/home/lau/soft_install/intel/oneapi/clck/2021.3.0/bin/intel64:/home/lau/soft_install/intel/oneapi/advisor/2021.3.0/bin64:/home/lau/soft_install/deepmd-kit-2.1.1/bin:/usr/local/cuda-11.6/bin:/home/lau/anaconda3/condabin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/home/lau/soft_install/gauopen:/home/lau/soft_install/g16/bsd:/home/lau/soft_install/g16:/home/lau/soft_install/amber18/bin
 # environment
@@ -137,7 +139,7 @@ VSCODE_LOG_STACK = false
 # environment
 LC_NUMERIC = zh_CN.UTF-8
 # environment
-VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-9c03f203-d27b-4224-beda-bb9a64c98d3b.sock
+VSCODE_IPC_HOOK_CLI = /run/user/1000/vscode-ipc-b4bb9572-4e30-49c8-a5c2-31e11af54d3e.sock
 # default
 .FEATURES := target-specific order-only second-expansion else-if shortest-stem undefine oneshell archives jobserver output-sync check-symlink load
 # environment
@@ -219,7 +221,7 @@ SHLVL = 0
 # makefile (from 'Makefile', line 2)
 CC = mpiicc
 # environment
-XDG_SESSION_ID = 2123
+XDG_SESSION_ID = 2168
 # environment
 AMBERHOME = /home/lau/soft_install/amber18
 # environment
@@ -263,12 +265,9 @@ _DSM_BARRIER = SHM
 # environment
 MFLAGS = -pqrR
 # environment
-SSH_CLIENT = 222.29.24.18 2380 22
+SSH_CLIENT = 222.29.104.22 3329 22
 # makefile (from 'Makefile', line 10)
 DIR_BIN = bin
- 
-make: *** No rule to make target 'all'.  Stop.
-
 # automatic
 +D = $(patsubst %/,%,$(dir $+))
 # environment
@@ -332,6 +331,7 @@ VTUNE_PROFILER_2021_DIR = /home/lau/soft_install/intel/oneapi/vtune/2021.5.0
 # environment
 PGI_TERM = trace,abort
 # default
+ 
 MAKE_HOST := x86_64-pc-linux-gnu
 # environment
 XDG_RUNTIME_DIR = /run/user/1000
@@ -355,9 +355,9 @@ IPPCRYPTOROOT = /home/lau/soft_install/intel/oneapi/ippcp/2021.3.0
 # Directories
 
 # . (device 2064, inode 187703297): 12 files, no impossibilities.
-# src (device 2064, inode 187698300): 10 files, no impossibilities.
+# src (device 2064, inode 187698300): 11 files, no impossibilities.
 
-# 22 files, no impossibilities in 2 directories.
+# 23 files, no impossibilities in 2 directories.
 
 # Implicit Rules
 
@@ -369,7 +369,7 @@ obj/%.o: src/%.cpp obj
 
 # Files
 
-bin/LauAnalysis: obj/input.o obj/atom.o obj/cell.o obj/global_functions.o obj/LAMMPS.o obj/cellFile.o obj/conver2PDB.o obj/main.o bin
+bin/LauAnalysis: obj/input.o obj/number_density.o obj/atom.o obj/cell.o obj/global_functions.o obj/LAMMPS.o obj/cellFile.o obj/conver2PDB.o obj/main.o bin
 #  Implicit rule search has not been done.
 #  Modification time never checked.
 #  File has not been updated.
@@ -439,6 +439,12 @@ obj/global_functions.o:
 #  File has not been updated.
 
 # Not a target:
+obj/number_density.o:
+#  Implicit rule search has not been done.
+#  Modification time never checked.
+#  File has not been updated.
+
+# Not a target:
 obj/input.o:
 #  Implicit rule search has not been done.
 #  Modification time never checked.
@@ -473,19 +479,19 @@ obj/conver2PDB.o:
 #  File has not been updated.
 
 # files hash-table stats:
-# Load=17/1024=2%, Rehash=0, Collisions=0/39=0%
+# Load=18/1024=2%, Rehash=0, Collisions=0/41=0%
 # VPATH Search Paths
 
 # No 'vpath' search paths.
 
 # No general ('VPATH' variable) search path.
 
-# strcache buffers: 1 (0) / strings = 38 / storage = 382 B / avg = 10 B
-# current buf: size = 8162 B / used = 382 B / count = 38 / avg = 10 B
+# strcache buffers: 1 (0) / strings = 40 / storage = 422 B / avg = 10 B
+# current buf: size = 8162 B / used = 422 B / count = 40 / avg = 10 B
 
-# strcache performance: lookups = 55 / hit rate = 30%
+# strcache performance: lookups = 57 / hit rate = 29%
 # hash-table stats:
-# Load=38/8192=0%, Rehash=0, Collisions=2/55=4%
-# Finished Make data base on Thu Jun  9 11:03:24 2022
+# Load=40/8192=0%, Rehash=0, Collisions=2/57=4%
+# Finished Make data base on Fri Jun 10 09:45:09 2022
 
  
