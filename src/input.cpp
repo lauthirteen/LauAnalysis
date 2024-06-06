@@ -61,6 +61,22 @@ void Input::Default(void)
     atom_type8 = "empty";
     atom_type9 = "empty";
     atom_type10 = "empty";
+    atom_type11 = "empty";
+    atom_type12 = "empty";
+    atom_type13 = "empty";
+    atom_type14 = "empty";
+    atom_type15 = "empty";
+    atom_type16 = "empty";
+    atom_type17 = "empty";
+    atom_type18 = "empty";
+    atom_type19 = "empty";
+    atom_type20 = "empty";
+    atom_type21 = "empty";
+    atom_type22 = "empty";
+    atom_type23 = "empty";
+    atom_type24 = "empty";
+    atom_type25 = "empty";
+
 
     begin_frame = 0;
     end_frame = 0;
@@ -77,6 +93,8 @@ void Input::Default(void)
     cell_dim_z = 0;
 
     nHB_max = 8; // max HB number
+
+    bin_num = 1;
 
     return;
 }
@@ -123,6 +141,21 @@ void Input::Read(const string &fn) // read parameters
         else if (strcmp("atom_type8", word) == 0) read_value(ifs, atom_type8);
         else if (strcmp("atom_type9", word) == 0) read_value(ifs, atom_type9);
         else if (strcmp("atom_type10", word) == 0) read_value(ifs, atom_type10);
+        else if (strcmp("atom_type11", word) == 0) read_value(ifs, atom_type11);
+        else if (strcmp("atom_type12", word) == 0) read_value(ifs, atom_type12);
+        else if (strcmp("atom_type13", word) == 0) read_value(ifs, atom_type13);
+        else if (strcmp("atom_type14", word) == 0) read_value(ifs, atom_type14);
+        else if (strcmp("atom_type15", word) == 0) read_value(ifs, atom_type15);
+        else if (strcmp("atom_type16", word) == 0) read_value(ifs, atom_type16);
+        else if (strcmp("atom_type17", word) == 0) read_value(ifs, atom_type17);
+        else if (strcmp("atom_type18", word) == 0) read_value(ifs, atom_type18);
+        else if (strcmp("atom_type19", word) == 0) read_value(ifs, atom_type19);
+        else if (strcmp("atom_type20", word) == 0) read_value(ifs, atom_type20);
+        else if (strcmp("atom_type21", word) == 0) read_value(ifs, atom_type21);
+        else if (strcmp("atom_type22", word) == 0) read_value(ifs, atom_type22);
+        else if (strcmp("atom_type23", word) == 0) read_value(ifs, atom_type23);
+        else if (strcmp("atom_type24", word) == 0) read_value(ifs, atom_type24);
+        else if (strcmp("atom_type25", word) == 0) read_value(ifs, atom_type25);
         //
         else if (strcmp("frame_dt", word) == 0) read_value(ifs, frame_dt);
         else if (strcmp("begin_frame", word) == 0) read_value(ifs,begin_frame);
@@ -138,6 +171,8 @@ void Input::Read(const string &fn) // read parameters
         else if (strcmp("cell_dim_x", word) == 0) read_value(ifs, cell_dim_x);
         else if (strcmp("cell_dim_y", word) == 0) read_value(ifs, cell_dim_y);
         else if (strcmp("cell_dim_z", word) == 0) read_value(ifs, cell_dim_z);
+        //
+        else if (strcmp("bin_num", word) == 0) read_value(ifs, bin_num);
         //
         else if (strcmp("#", word) == 0)
         {

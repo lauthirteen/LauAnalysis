@@ -1,8 +1,8 @@
  ------------------------------------------------------------------------------------
-              WELCOME TO LauAnalysis Thu Jun  9 15:32:45 2022
+              WELCOME TO LauAnalysis Thu Aug 25 17:09:44 2022
 
  THIS IS A PROGRAM FOR PERFORMING ANALYSIS FOR MOLECULAR DYNAMICS
- AUTHOR: Lau, LAST UPDATE: 2022-03
+ AUTHOR: Lau, LAST UPDATE: 2022-06
  READING from INPUT file
  dr = 0.1 Angstrom
  rcut = 200 Angstrom
@@ -10,5 +10,5 @@
  --------------- 
       Finish     
  --------------- 
- HAVE A GREAT DAY! Thu Jun  9 15:32:45 2022
+ HAVE A GREAT DAY! Thu Aug 25 17:09:44 2022
 

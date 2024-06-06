@@ -53,12 +53,29 @@ public:
     string atom_type8;
     string atom_type9;
     string atom_type10;
+    string atom_type11;
+    string atom_type12;
+    string atom_type13;
+    string atom_type14;
+    string atom_type15;
+    string atom_type16;
+    string atom_type17;
+    string atom_type18;
+    string atom_type19;
+    string atom_type20;
+    string atom_type21;
+    string atom_type22;
+    string atom_type23;
+    string atom_type24;
+    string atom_type25;
 
     float frame_dt; // The time between every two configurations (ps)
     int begin_frame;
     int end_frame;
     int interval_frame;
 
+    int bin_num;
+    
     string direction; // x y z , number density direction
     double rcut; // max box length
     double dr;    // bin of length

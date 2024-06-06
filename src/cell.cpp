@@ -32,9 +32,65 @@ Cell::Cell()
     mass_dict["P"] = 30.973762;
     mass_dict["S"] = 31.9720707;
 
+    mass_dict["In"] = 114.818;
+    mass_dict["Sb"] = 121.760;
+
     mass_dict["Ca"] = 39.9625906;
     mass_dict["Cu"] = 62.9295989;
     mass_dict["W"] = 183.950928;
+    mass_dict["V"] = 50.94;
+    mass_dict["Ti"] = 47.88;
+    
+    // PTQ8-Y6
+    mass_dict["P1"] = 19.000;
+    mass_dict["P2"] = 25.028;
+    mass_dict["P3"] = 24.020;
+    mass_dict["P4"] = 16.000;
+    mass_dict["P5"] = 37.038;
+    mass_dict["P6"] = 26.020;
+    mass_dict["P7"] = 32.060;
+    mass_dict["P8"] = 14.010;
+    mass_dict["P9"] = 26.020;
+    mass_dict["P10"] = 27.044;
+    mass_dict["P11"] = 29.060;
+    mass_dict["P12"] = 28.052;
+    mass_dict["P13"] = 43.086;
+    mass_dict["P14"] = 26.036;
+    mass_dict["P15"] = 24.020;
+    mass_dict["P16"] = 27.028;
+    mass_dict["P17"] = 26.020;
+    mass_dict["P18"] = 16.000;
+    mass_dict["P19"] = 27.044;
+    mass_dict["P20"] = 28.052;
+    mass_dict["P21"] = 29.060;
+    mass_dict["P22"] = 19.000;
+    mass_dict["P23"] = 25.028;
+    mass_dict["P24"] = 32.060;
+    // PTQ10-Y6
+    mass_dict["T1"] =  19.000;
+    mass_dict["T2"] =  25.028;
+    mass_dict["T3"] =  24.020;
+    mass_dict["T4"] =  16.000;
+    mass_dict["T5"] =  37.038;
+    mass_dict["T6"] =  26.020;
+    mass_dict["T7"] =  32.060;
+    mass_dict["T8"] =  14.010;
+    mass_dict["T9"] =  26.020;
+    mass_dict["T10"] = 27.044;
+    mass_dict["T11"] = 29.060;
+    mass_dict["T12"] = 28.052;
+    mass_dict["T13"] = 43.086;
+    mass_dict["T14"] = 19.000;
+    mass_dict["T15"] = 25.028;
+    mass_dict["T16"] = 24.020;
+    mass_dict["T17"] = 27.028;
+    mass_dict["T18"] = 26.020;
+    mass_dict["T19"] = 16.000;
+    mass_dict["T20"] = 27.044;
+    mass_dict["T21"] = 28.052;
+    mass_dict["T22"] = 29.060;
+    mass_dict["T23"] = 26.036;
+    mass_dict["T24"] = 32.060;
 }
 
 

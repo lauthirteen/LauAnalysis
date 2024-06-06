@@ -6,7 +6,7 @@
 #include "../include/conver2PDB.h"
 #include "../include/number_density.h"
 #include "../include/water.h"
-
+#include "../include/demixing_parameter.h"
 
 // example：./LauAnalysis INPUT
 
@@ -46,6 +46,10 @@ int main(int argc, char **argv)
     else if(INPUT.calculation == "NUMBER_DENSITY")
     {
         NumberDensity ts; ts.Routine();
+    }
+    else if(INPUT.calculation == "DEMIXING_PARAMETER")
+    {
+        DemixingParameter ts; ts.Routine();
     }
     else
     {

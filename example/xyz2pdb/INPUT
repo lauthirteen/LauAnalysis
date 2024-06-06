@@ -1,0 +1,17 @@
+# Required Information
+calculation 2PBD
+traj_type XYZ
+traj_path ./xtb.trj
+#num_atom_type 3
+#total_num_atom 621
+#atom_type1 H
+#atom_type2 O
+#atom_type3 Mg
+frame_dt 0.01  # the time of between two frame
+begin_frame 1   # begin from 1
+end_frame 100
+interval_frame 1 # must >= 1
+# Optional Information
+cell_dim_x 17.5
+cell_dim_y 17.5
+cell_dim_z 17.5

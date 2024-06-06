@@ -1,0 +1,70 @@
+MODEL         1
+REMARK   Converted from ./MD_dump file
+REMARK   Snapshot time: 0.001 ps
+REMARK   Atom number: 64
+CRYST1   12.731   12.731   12.731  90.00  90.00  90.00
+ATOM      1   In MOL A   1       1.099  10.878   7.929
+ATOM      2   In MOL A   1      12.672   2.631   8.897
+ATOM      3   In MOL A   1      12.639   9.075   0.669
+ATOM      4   In MOL A   1       3.600   0.913   7.014
+ATOM      5   In MOL A   1       2.106   6.514   8.867
+ATOM      6   In MOL A   1       1.396  12.409   3.350
+ATOM      7   In MOL A   1      10.296  11.673  10.192
+ATOM      8   In MOL A   1       4.518   2.879   2.464
+ATOM      9   In MOL A   1      11.557   1.450   1.386
+ATOM     10   In MOL A   1      11.124   0.574   5.394
+ATOM     11   In MOL A   1       8.195   6.023   5.578
+ATOM     12   In MOL A   1       7.071   0.117   4.518
+ATOM     13   In MOL A   1       2.639   7.621   3.097
+ATOM     14   In MOL A   1       3.933   8.704  11.149
+ATOM     15   In MOL A   1       5.053   3.548  10.675
+ATOM     16   In MOL A   1       5.049   4.957   5.956
+ATOM     17   In MOL A   1       8.910   9.673   6.581
+ATOM     18   In MOL A   1       1.997  12.683  12.031
+ATOM     19   In MOL A   1       7.045   7.381   9.857
+ATOM     20   In MOL A   1       9.405   3.703  11.252
+ATOM     21   In MOL A   1      12.146   6.209   6.732
+ATOM     22   In MOL A   1       1.236   4.372  12.564
+ATOM     23   In MOL A   1      11.474   9.050   4.636
+ATOM     24   In MOL A   1       8.114   1.571   7.743
+ATOM     25   In MOL A   1       4.550   9.418   6.294
+ATOM     26   In MOL A   1       6.267  11.774  10.044
+ATOM     27   In MOL A   1       0.558   3.841   4.371
+ATOM     28   In MOL A   1       5.470  11.275   1.636
+ATOM     29   In MOL A   1       5.467   6.305   1.604
+ATOM     30   In MOL A   1       7.685   1.222   0.563
+ATOM     31   In MOL A   1       9.071   7.334   1.353
+ATOM     32   In MOL A   1      11.309   7.685  10.430
+ATOM     33   Sb MOL A   1       4.762   7.289   8.219
+ATOM     34   Sb MOL A   1       2.899   6.655   0.178
+ATOM     35   Sb MOL A   1       8.388   0.978  10.546
+ATOM     36   Sb MOL A   1      11.073  11.462   7.425
+ATOM     37   Sb MOL A   1      10.684   4.950   4.060
+ATOM     38   Sb MOL A   1       1.858  10.112   5.332
+ATOM     39   Sb MOL A   1       2.553  10.675   1.125
+ATOM     40   Sb MOL A   1      11.375   5.615  12.624
+ATOM     41   Sb MOL A   1       6.472  11.227   7.073
+ATOM     42   Sb MOL A   1      12.179   0.760  11.327
+ATOM     43   Sb MOL A   1       1.631   2.472   1.868
+ATOM     44   Sb MOL A   1      12.397   7.053   2.745
+ATOM     45   Sb MOL A   1       8.384   8.591   3.971
+ATOM     46   Sb MOL A   1       5.475   2.909   7.907
+ATOM     47   Sb MOL A   1       5.366   8.921   3.487
+ATOM     48   Sb MOL A   1       3.332  12.135   9.443
+ATOM     49   Sb MOL A   1       4.912   1.498  12.687
+ATOM     50   Sb MOL A   1       6.981   5.309  11.874
+ATOM     51   Sb MOL A   1       9.945   9.606  12.162
+ATOM     52   Sb MOL A   1       9.442   7.223   8.202
+ATOM     53   Sb MOL A   1       0.895   1.700   6.361
+ATOM     54   Sb MOL A   1      10.114   3.916   8.394
+ATOM     55   Sb MOL A   1       8.799   2.361   5.017
+ATOM     56   Sb MOL A   1       6.646   9.487  11.757
+ATOM     57   Sb MOL A   1      11.126  11.619   2.962
+ATOM     58   Sb MOL A   1       4.334   0.404   4.156
+ATOM     59   Sb MOL A   1       2.280   5.877   5.722
+ATOM     60   Sb MOL A   1       6.874   4.357   3.408
+ATOM     61   Sb MOL A   1       2.241   3.786   9.965
+ATOM     62   Sb MOL A   1       1.186   9.010  10.297
+ATOM     63   Sb MOL A   1       8.427  11.562   2.063
+ATOM     64   Sb MOL A   1       9.328   3.526   1.537
+END

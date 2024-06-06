@@ -1,0 +1,13 @@
+# Required Information
+calculation 2PBD
+traj_type ABACUS
+traj_path ./MD_dump
+num_atom_type 2
+total_num_atom 64
+atom_type1 In
+atom_type2 Sb
+frame_dt 0.001  # the time of between two frame
+begin_frame 1   # begin from 1
+end_frame 1
+interval_frame 1 # must >= 1
+# Optional Information

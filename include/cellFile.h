@@ -14,6 +14,7 @@ public:
 private: 
     static bool ReadGeometry_LAMMPS( Cell &cel, ifstream &ifs );
     static bool ReadGeometry_CP2K( Cell &cel, ifstream &ifs );
+    static bool ReadGeometry_ABACUS( Cell &cel, ifstream &ifs );
     static ifstream ifs;
     static bool file_open;
 };

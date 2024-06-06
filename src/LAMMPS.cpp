@@ -26,7 +26,7 @@ bool CellFile::ReadGeometry_LAMMPS( Cell &cel, ifstream &ifs )
     ifs >> zlo;
     READ_VALUE(ifs, zhi);
     cel.cell_z = zhi - zlo;
-
+    cel.volume = cel.cell_x * cel.cell_y * cel.cell_z;
     // (3) read id and coord
     delete[] cel.atom;
 	cel.atom = new Atom[cel.atom_num];
@@ -48,15 +48,32 @@ bool CellFile::ReadGeometry_LAMMPS( Cell &cel, ifstream &ifs )
         if (type == 8) {cel.atom[ia].name = INPUT.atom_type8;}
         if (type == 9) {cel.atom[ia].name = INPUT.atom_type9;}
         if (type == 10) {cel.atom[ia].name = INPUT.atom_type10;}
+        if (type == 11) {cel.atom[ia].name = INPUT.atom_type11;}
+        if (type == 12) {cel.atom[ia].name = INPUT.atom_type12;}
+        if (type == 13) {cel.atom[ia].name = INPUT.atom_type13;}
+        if (type == 14) {cel.atom[ia].name = INPUT.atom_type14;}
+        if (type == 15) {cel.atom[ia].name = INPUT.atom_type15;}
+        if (type == 16) {cel.atom[ia].name = INPUT.atom_type16;}
+        if (type == 17) {cel.atom[ia].name = INPUT.atom_type17;}
+        if (type == 18) {cel.atom[ia].name = INPUT.atom_type18;}
+        if (type == 19) {cel.atom[ia].name = INPUT.atom_type19;}
+        if (type == 20) {cel.atom[ia].name = INPUT.atom_type20;}
+        if (type == 21) {cel.atom[ia].name = INPUT.atom_type21;}
+        if (type == 22) {cel.atom[ia].name = INPUT.atom_type22;}
+        if (type == 23) {cel.atom[ia].name = INPUT.atom_type23;}
+        if (type == 24) {cel.atom[ia].name = INPUT.atom_type24;}
+        if (type == 25) {cel.atom[ia].name = INPUT.atom_type25;}
+
         //cout << cel.atom[ia].name << endl;
         for (auto atom_mass:cel.mass_dict)
         {
             //cout << atom_mass.first << ":" << atom_mass.second << endl;
             if (atom_mass.first == cel.atom[ia].name) {cel.atom[ia].mass = atom_mass.second;}
         }
-        cel.atom[ia].x = x;
-        cel.atom[ia].y = y;
-        cel.atom[ia].z = z;
+        cel.atom[ia].x = x - xlo;
+        cel.atom[ia].y = y - ylo;
+        cel.atom[ia].z = z - zlo;
+        
     }
     return 0;
 }

@@ -41,5 +41,18 @@ bool CellFile::ReadGeometry( Cell &cel )
         }
 		return ReadGeometry_CP2K(cel, ifs);
 	}
+  	if (INPUT.traj_type=="ABACUS")
+	{
+        
+        if (file_open == false)
+        {
+            stringstream ss;
+            ss << INPUT.traj_path;
+            cout << " ReadGeometry : " << ss.str() << endl;
+            ifs.open(ss.str().c_str());
+            file_open = true;
+        }
+		return ReadGeometry_ABACUS(cel, ifs);
+	}
     return false;
 }
